@@ -1,0 +1,117 @@
+.todo-item-wrapper {
+    .todo-wrap {
+        border-radius: 15.6px;
+        border: 1px solid var(--text-color);
+        background-color: var(--background-color);
+        box-shadow: 0px -5.46011px 17.94035px 0px rgba(0, 0, 0, 0.02);
+        padding: 23px 25px;
+        min-width: 220px;
+        max-width: 100%;
+        position: relative;
+
+        .item-wrap {
+            display: flex;
+            gap: 8px;
+
+            .icon {
+                width: 19.5px;
+                height: 23.4px;
+                min-width: 19.5px;
+                min-height: 23.4px;
+                mask-image: url("../../../Assets/icons/to-do-list.svg") no-repeat center;
+                -webkit-mask: url("../../../Assets/icons/to-do-list.svg") no-repeat center;
+                display: block;
+                background-color: var(--text-color);
+            }
+
+            .item {
+                .title {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .desc {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .actions-wrap {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+
+            .dots-wrap {
+                display: grid;
+                height: 18px;
+                cursor: pointer;
+                width: 8px;
+                place-items: center;
+
+                span {
+                    display: block;
+                    background-color: var(--text-color);
+                    height: 2.4px;
+                    width: 2.4px;
+                    min-height: 2.4px;
+                    min-width: 2.4px;
+                    border-radius: 50%;
+                    opacity: 0.8;
+                }
+            }
+
+            .popup-wrap {
+                position: absolute;
+                right: 14px;
+                top: -40px;
+                background-color: var(--background-color);
+                box-shadow: 0px 0px 15px -6px var(--text-color);
+                border-radius: 8px;
+                padding: 12px 8px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0px;
+                    border: 2px solid var(--background-color);
+                    background: var(--background-color);
+                    rotate: 40deg;
+                    height: 8px;
+                    width: 8px;
+                }
+
+                li {
+                    list-style: none;
+
+                    .icons {
+                        width: 12px;
+                        height: 24px;
+                        min-width: 12px;
+                        min-height: 24px;
+                        display: block;
+                        background-color: var(--text-color);
+                        cursor: pointer;
+
+                        &.complete {
+                            mask-image: url("../../../Assets/icons/check.svg") no-repeat center;
+                            -webkit-mask: url("../../../Assets/icons/check.svg") no-repeat center;
+                        }
+
+                        &.update {
+                            mask-image: url("../../../Assets/icons/pencial.svg") no-repeat center;
+                            -webkit-mask: url("../../../Assets/icons/pencial.svg") no-repeat center;
+                        }
+
+                        &.delete {
+                            mask-image: url("../../../Assets/icons/delete.svg") no-repeat center;
+                            -webkit-mask: url("../../../Assets/icons/delete.svg") no-repeat center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

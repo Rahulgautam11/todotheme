@@ -1,0 +1,19 @@
+@import "../../index.scss";
+
+.nav-bar-wrapper {
+    // background-color: $white;
+
+    .nav-bar {
+        padding: 28px 0;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+
+        .logo {
+            p {
+                font-weight: 500;
+                font-size: 26px;
+            }
+        }
+    }
+}
