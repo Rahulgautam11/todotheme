@@ -17,3 +17,6 @@ manage by redux
 
 # whole project is responsive
 
+# host link
+
+- https://todo-theme.netlify.app/
