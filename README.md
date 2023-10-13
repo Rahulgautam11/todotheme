@@ -1,8 +1,8 @@
 # run project
 
-1- clone by repo
-2- commond- 'npm i'
-3- npm start
+- clone by repo
+- commond- 'npm i'
+- npm start
 
 # switch button 
 switch button using for change whole project theme dark and britness mode
